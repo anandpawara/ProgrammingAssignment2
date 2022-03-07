@@ -2,6 +2,7 @@
 ## functions do
 
 ## Write a short comment describing this function
+## Intializing  the set and get functions
 
 makeCacheMatrix <- function(x = matrix()) {
  j <- NULL
@@ -19,7 +20,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-
+## This function returns cached value of the function, the value is calculated for first time then value is calculated and cached
+## the value if precalculated then it is first searched in cache and if found there function returns the cached value
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
   j <- x$getInverse()  ## Check if x inverse is cached, if j is not null then returns cached value
